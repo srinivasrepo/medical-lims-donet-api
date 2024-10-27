@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OOSLIMSLOG_V1" targetNamespace="http://tempuri.org/OOSLOG_V1.xsd" xmlns:mstns="http://tempuri.org/OOSLOG_V1.xsd" xmlns="http://tempuri.org/OOSLOG_V1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OOSLIMSLOG_V1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="OOSLIMSLOG_V1" msprop:Generator_UserDSName="OOSLIMSLOG_V1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblLogDetails" msprop:Generator_TableClassName="tblLogDetailsDataTable" msprop:Generator_RowEvArgName="tblLogDetailsRowChangeEvent" msprop:Generator_TablePropName="tblLogDetails" msprop:Generator_TableVarName="tabletblLogDetails" msprop:Generator_RowEvHandlerName="tblLogDetailsRowChangeEventHandler" msprop:Generator_RowDeletingName="tblLogDetailsRowDeleting" msprop:Generator_RowChangingName="tblLogDetailsRowChanging" msprop:Generator_RowDeletedName="tblLogDetailsRowDeleted" msprop:Generator_UserTableName="tblLogDetails" msprop:Generator_RowChangedName="tblLogDetailsRowChanged" msprop:Generator_RowClassName="tblLogDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CREATED_ON" msprop:Generator_ColumnVarNameInTable="columnCREATED_ON" msprop:Generator_ColumnPropNameInRow="CREATED_ON" msprop:Generator_ColumnPropNameInTable="CREATED_ONColumn" msprop:Generator_UserColumnName="CREATED_ON" type="xs:string" minOccurs="0" />
+              <xs:element name="OOS_NUMBER" msprop:Generator_ColumnVarNameInTable="columnOOS_NUMBER" msprop:Generator_ColumnPropNameInRow="OOS_NUMBER" msprop:Generator_ColumnPropNameInTable="OOS_NUMBERColumn" msprop:Generator_UserColumnName="OOS_NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="SUMMARY" msprop:Generator_ColumnVarNameInTable="columnSUMMARY" msprop:Generator_ColumnPropNameInRow="SUMMARY" msprop:Generator_ColumnPropNameInTable="SUMMARYColumn" msprop:Generator_UserColumnName="SUMMARY" type="xs:string" minOccurs="0" />
+              <xs:element name="QA_APP_BY" msprop:Generator_ColumnVarNameInTable="columnQA_APP_BY" msprop:Generator_ColumnPropNameInRow="QA_APP_BY" msprop:Generator_ColumnPropNameInTable="QA_APP_BYColumn" msprop:Generator_UserColumnName="QA_APP_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="QA_APP_ON" msprop:Generator_ColumnVarNameInTable="columnQA_APP_ON" msprop:Generator_ColumnPropNameInRow="QA_APP_ON" msprop:Generator_ColumnPropNameInTable="QA_APP_ONColumn" msprop:Generator_UserColumnName="QA_APP_ON" type="xs:string" minOccurs="0" />
+              <xs:element name="TEST_STATUS" msprop:Generator_ColumnVarNameInTable="columnTEST_STATUS" msprop:Generator_ColumnPropNameInRow="TEST_STATUS" msprop:Generator_ColumnPropNameInTable="TEST_STATUSColumn" msprop:Generator_UserColumnName="TEST_STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="LAB_INVST_COMP_ON" msprop:Generator_ColumnVarNameInTable="columnLAB_INVST_COMP_ON" msprop:Generator_ColumnPropNameInRow="LAB_INVST_COMP_ON" msprop:Generator_ColumnPropNameInTable="LAB_INVST_COMP_ONColumn" msprop:Generator_UserColumnName="LAB_INVST_COMP_ON" type="xs:string" minOccurs="0" />
+              <xs:element name="DEV_CLOSED_BY" msprop:Generator_ColumnVarNameInTable="columnDEV_CLOSED_BY" msprop:Generator_ColumnPropNameInRow="DEV_CLOSED_BY" msprop:Generator_ColumnPropNameInTable="DEV_CLOSED_BYColumn" msprop:Generator_UserColumnName="DEV_CLOSED_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="DEVIATION_CLOSED_DATE" msprop:Generator_ColumnVarNameInTable="columnDEVIATION_CLOSED_DATE" msprop:Generator_ColumnPropNameInRow="DEVIATION_CLOSED_DATE" msprop:Generator_ColumnPropNameInTable="DEVIATION_CLOSED_DATEColumn" msprop:Generator_UserColumnName="DEVIATION_CLOSED_DATE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

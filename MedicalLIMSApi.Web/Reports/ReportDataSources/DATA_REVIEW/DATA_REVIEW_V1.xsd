@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DATA_REVIEW_V1" targetNamespace="http://tempuri.org/DATA_REVIEW_V1.xsd" xmlns:mstns="http://tempuri.org/DATA_REVIEW_V1.xsd" xmlns="http://tempuri.org/DATA_REVIEW_V1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DATA_REVIEW_V1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DATA_REVIEW_V1" msprop:Generator_UserDSName="DATA_REVIEW_V1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblBasicDetails" msprop:Generator_TableClassName="tblBasicDetailsDataTable" msprop:Generator_TableVarName="tabletblBasicDetails" msprop:Generator_RowChangedName="tblBasicDetailsRowChanged" msprop:Generator_TablePropName="tblBasicDetails" msprop:Generator_RowDeletingName="tblBasicDetailsRowDeleting" msprop:Generator_RowChangingName="tblBasicDetailsRowChanging" msprop:Generator_RowEvHandlerName="tblBasicDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="tblBasicDetailsRowDeleted" msprop:Generator_RowClassName="tblBasicDetailsRow" msprop:Generator_UserTableName="tblBasicDetails" msprop:Generator_RowEvArgName="tblBasicDetailsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Material" msprop:Generator_ColumnVarNameInTable="columnMaterial" msprop:Generator_ColumnPropNameInRow="Material" msprop:Generator_ColumnPropNameInTable="MaterialColumn" msprop:Generator_UserColumnName="Material" type="xs:string" minOccurs="0" />
+              <xs:element name="BatchNumber" msprop:Generator_ColumnVarNameInTable="columnBatchNumber" msprop:Generator_ColumnPropNameInRow="BatchNumber" msprop:Generator_ColumnPropNameInTable="BatchNumberColumn" msprop:Generator_UserColumnName="BatchNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="ArNumber" msprop:Generator_ColumnVarNameInTable="columnArNumber" msprop:Generator_ColumnPropNameInRow="ArNumber" msprop:Generator_ColumnPropNameInTable="ArNumberColumn" msprop:Generator_UserColumnName="ArNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="Specification" msprop:Generator_ColumnVarNameInTable="columnSpecification" msprop:Generator_ColumnPropNameInRow="Specification" msprop:Generator_ColumnPropNameInTable="SpecificationColumn" msprop:Generator_UserColumnName="Specification" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="ActionBy" msprop:Generator_ColumnVarNameInTable="columnActionBy" msprop:Generator_ColumnPropNameInRow="ActionBy" msprop:Generator_ColumnPropNameInTable="ActionByColumn" msprop:Generator_UserColumnName="ActionBy" type="xs:string" minOccurs="0" />
+              <xs:element name="ActionDate" msprop:Generator_ColumnVarNameInTable="columnActionDate" msprop:Generator_ColumnPropNameInRow="ActionDate" msprop:Generator_ColumnPropNameInTable="ActionDateColumn" msprop:Generator_UserColumnName="ActionDate" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+              <xs:element name="Observations" msprop:Generator_ColumnVarNameInTable="columnObservations" msprop:Generator_ColumnPropNameInRow="Observations" msprop:Generator_ColumnPropNameInTable="ObservationsColumn" msprop:Generator_UserColumnName="Observations" type="xs:string" minOccurs="0" />
+              <xs:element name="Recommendations" msprop:Generator_ColumnVarNameInTable="columnRecommendations" msprop:Generator_ColumnPropNameInRow="Recommendations" msprop:Generator_ColumnPropNameInTable="RecommendationsColumn" msprop:Generator_UserColumnName="Recommendations" type="xs:string" minOccurs="0" />
+              <xs:element name="ApplicationSoftware" msprop:Generator_ColumnVarNameInTable="columnApplicationSoftware" msprop:Generator_ColumnPropNameInRow="ApplicationSoftware" msprop:Generator_ColumnPropNameInTable="ApplicationSoftwareColumn" msprop:Generator_UserColumnName="ApplicationSoftware" type="xs:string" minOccurs="0" />
+              <xs:element name="DataFileNo" msprop:Generator_ColumnVarNameInTable="columnDataFileNo" msprop:Generator_ColumnPropNameInRow="DataFileNo" msprop:Generator_ColumnPropNameInTable="DataFileNoColumn" msprop:Generator_UserColumnName="DataFileNo" type="xs:string" minOccurs="0" />
+              <xs:element name="TestName" msprop:Generator_ColumnVarNameInTable="columnTestName" msprop:Generator_ColumnPropNameInRow="TestName" msprop:Generator_ColumnPropNameInTable="TestNameColumn" msprop:Generator_UserColumnName="TestName" type="xs:string" minOccurs="0" />
+              <xs:element name="InstrumentID" msprop:Generator_ColumnVarNameInTable="columnInstrumentID" msprop:Generator_ColumnPropNameInRow="InstrumentID" msprop:Generator_ColumnPropNameInTable="InstrumentIDColumn" msprop:Generator_UserColumnName="InstrumentID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblChkDetails" msprop:Generator_TableClassName="tblChkDetailsDataTable" msprop:Generator_TableVarName="tabletblChkDetails" msprop:Generator_RowChangedName="tblChkDetailsRowChanged" msprop:Generator_TablePropName="tblChkDetails" msprop:Generator_RowDeletingName="tblChkDetailsRowDeleting" msprop:Generator_RowChangingName="tblChkDetailsRowChanging" msprop:Generator_RowEvHandlerName="tblChkDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="tblChkDetailsRowDeleted" msprop:Generator_RowClassName="tblChkDetailsRow" msprop:Generator_UserTableName="tblChkDetails" msprop:Generator_RowEvArgName="tblChkDetailsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Question" msprop:Generator_ColumnVarNameInTable="columnQuestion" msprop:Generator_ColumnPropNameInRow="Question" msprop:Generator_ColumnPropNameInTable="QuestionColumn" msprop:Generator_UserColumnName="Question" type="xs:string" minOccurs="0" />
+              <xs:element name="Answer" msprop:Generator_ColumnVarNameInTable="columnAnswer" msprop:Generator_ColumnPropNameInRow="Answer" msprop:Generator_ColumnPropNameInTable="AnswerColumn" msprop:Generator_UserColumnName="Answer" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

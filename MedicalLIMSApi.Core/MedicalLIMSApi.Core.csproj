@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAE04EC0-F103-D311-BF4B-00C04FCBFE97}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MedicalLIMSApi.Core</RootNamespace>
+    <AssemblyName>MedicalLIMSApi.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.6.10.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.6.10\lib\net452\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonMethods\AppDateTimeUtil.cs" />
+    <Compile Include="CommonMethods\CommonStaticMethods.cs" />
+    <Compile Include="CommonMethods\UploadFilesVariables.cs" />
+    <Compile Include="Entities\AnalystQualification\AnalystQualification.cs" />
+    <Compile Include="Entities\ApprovalProcess\ApprovalProcess.cs" />
+    <Compile Include="Entities\AuditTrail\AuditTrail.cs" />
+    <Compile Include="Entities\CalibrationArds\CalibrationArds.cs" />
+    <Compile Include="Entities\Common\CategoryItems.cs" />
+    <Compile Include="Entities\Common\Common.cs" />
+    <Compile Include="Entities\Common\Entity.cs" />
+    <Compile Include="Entities\Common\Impersonator.cs" />
+    <Compile Include="Entities\Common\NetResource.cs" />
+    <Compile Include="Entities\Common\TransResults.cs" />
+    <Compile Include="Entities\DataReview\DataReview.cs" />
+    <Compile Include="Entities\Indicators\Indicators.cs" />
+    <Compile Include="Entities\Invalidations\Invalidations.cs" />
+    <Compile Include="Entities\Login\Login.cs" />
+    <Compile Include="Entities\Login\SwitchPlant.cs" />
+    <Compile Include="Entities\MobilePhase\MobilePhase.cs" />
+    <Compile Include="Entities\OOS\Oos.cs" />
+    <Compile Include="Entities\QCCalibrations\QCCalibrations.cs" />
+    <Compile Include="Entities\QCInventory\QCInventory.cs" />
+    <Compile Include="Entities\Reports\Reports.cs" />
+    <Compile Include="Entities\RinsingSolutions\RinsingSolutions.cs" />
+    <Compile Include="Entities\RolePermissions\RolePermissions.cs" />
+    <Compile Include="Entities\SampleAnalysis\SampleAnalysis.cs" />
+    <Compile Include="Entities\SampleDestruction\SampleDestruction.cs" />
+    <Compile Include="Entities\SamplePlan\SamplePlan.cs" />
+    <Compile Include="Entities\SpecValidation\SpecValidation.cs" />
+    <Compile Include="Entities\StockSolutions\StockSolutions.cs" />
+    <Compile Include="Entities\Utilities\Utilities.cs" />
+    <Compile Include="Entities\UtilUploads\UtilUpload.cs" />
+    <Compile Include="Entities\VolumetricSolution\VolumetricSolution.cs" />
+    <Compile Include="Interface\AnalystQualification\IAnalystQualification.cs" />
+    <Compile Include="Interface\ApprovalProcess\IApprovalProcess.cs" />
+    <Compile Include="Interface\AuditTrail\IAuditTrail.cs" />
+    <Compile Include="Interface\CalibrationArds\ICalibrationArds.cs" />
+    <Compile Include="Interface\Common\ICommon.cs" />
+    <Compile Include="Interface\DataReview\IDataReview.cs" />
+    <Compile Include="Interface\Indicators\IIndicators.cs" />
+    <Compile Include="Interface\Invalidations\IInvalidations.cs" />
+    <Compile Include="Interface\Login\ILogin.cs" />
+    <Compile Include="Interface\MobilePhase\IMobilePhase.cs" />
+    <Compile Include="Interface\OOS\IOos.cs" />
+    <Compile Include="Interface\QCCalibrations\IQCCalibrations.cs" />
+    <Compile Include="Interface\QCInventory\IQCInventory.cs" />
+    <Compile Include="Interface\Report\IReport.cs" />
+    <Compile Include="Interface\RinsingSolutions\IRinsingSolutions.cs" />
+    <Compile Include="Interface\RolePermissions\IRolePermissions.cs" />
+    <Compile Include="Interface\SampleAnalysis\ISampleAnalysis.cs" />
+    <Compile Include="Interface\SampleDestruction\ISampleDestruction.cs" />
+    <Compile Include="Interface\SamplePlan\ISamplePlan.cs" />
+    <Compile Include="Interface\SpecValidation\ISpecValidation.cs" />
+    <Compile Include="Interface\StockSolutions\IStockSolutions.cs" />
+    <Compile Include="Interface\UtilUploads\IUtilUploads.cs" />
+    <Compile Include="Interface\VolumetricSolution\IVolumetricSolution.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

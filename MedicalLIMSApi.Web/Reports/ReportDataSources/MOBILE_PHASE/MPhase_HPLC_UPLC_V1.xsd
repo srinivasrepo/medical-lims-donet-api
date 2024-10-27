@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MPhase_HPLC_UPLC_V1" targetNamespace="http://tempuri.org/MPhase_HPLC_UPLC_V1.xsd" xmlns:mstns="http://tempuri.org/MPhase_HPLC_UPLC_V1.xsd" xmlns="http://tempuri.org/MPhase_HPLC_UPLC_V1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MPhase_HPLC_UPLC_V1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="MPhase_HPLC_UPLC_V1" msprop:Generator_UserDSName="MPhase_HPLC_UPLC_V1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblMPhasePrepBasic" msprop:Generator_TableClassName="tblMPhasePrepBasicDataTable" msprop:Generator_TableVarName="tabletblMPhasePrepBasic" msprop:Generator_TablePropName="tblMPhasePrepBasic" msprop:Generator_RowDeletingName="tblMPhasePrepBasicRowDeleting" msprop:Generator_RowChangingName="tblMPhasePrepBasicRowChanging" msprop:Generator_RowEvHandlerName="tblMPhasePrepBasicRowChangeEventHandler" msprop:Generator_RowDeletedName="tblMPhasePrepBasicRowDeleted" msprop:Generator_UserTableName="tblMPhasePrepBasic" msprop:Generator_RowChangedName="tblMPhasePrepBasicRowChanged" msprop:Generator_RowEvArgName="tblMPhasePrepBasicRowChangeEvent" msprop:Generator_RowClassName="tblMPhasePrepBasicRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BufferPreparation" msprop:Generator_ColumnVarNameInTable="columnBufferPreparation" msprop:Generator_ColumnPropNameInRow="BufferPreparation" msprop:Generator_ColumnPropNameInTable="BufferPreparationColumn" msprop:Generator_UserColumnName="BufferPreparation" type="xs:string" minOccurs="0" />
+              <xs:element name="MobilePhase_A" msprop:Generator_ColumnVarNameInTable="columnMobilePhase_A" msprop:Generator_ColumnPropNameInRow="MobilePhase_A" msprop:Generator_ColumnPropNameInTable="MobilePhase_AColumn" msprop:Generator_UserColumnName="MobilePhase_A" type="xs:string" minOccurs="0" />
+              <xs:element name="MobilePhase_B" msprop:Generator_ColumnVarNameInTable="columnMobilePhase_B" msprop:Generator_ColumnPropNameInRow="MobilePhase_B" msprop:Generator_ColumnPropNameInTable="MobilePhase_BColumn" msprop:Generator_UserColumnName="MobilePhase_B" type="xs:string" minOccurs="0" />
+              <xs:element name="PreparedBy" msprop:Generator_ColumnVarNameInTable="columnPreparedBy" msprop:Generator_ColumnPropNameInRow="PreparedBy" msprop:Generator_ColumnPropNameInTable="PreparedByColumn" msprop:Generator_UserColumnName="PreparedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="CheckedBy" msprop:Generator_ColumnVarNameInTable="columnCheckedBy" msprop:Generator_ColumnPropNameInRow="CheckedBy" msprop:Generator_ColumnPropNameInTable="CheckedByColumn" msprop:Generator_UserColumnName="CheckedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="PreparedOn" msprop:Generator_ColumnVarNameInTable="columnPreparedOn" msprop:Generator_ColumnPropNameInRow="PreparedOn" msprop:Generator_ColumnPropNameInTable="PreparedOnColumn" msprop:Generator_UserColumnName="PreparedOn" type="xs:string" minOccurs="0" />
+              <xs:element name="CheckedOn" msprop:Generator_ColumnVarNameInTable="columnCheckedOn" msprop:Generator_ColumnPropNameInRow="CheckedOn" msprop:Generator_ColumnPropNameInTable="CheckedOnColumn" msprop:Generator_UserColumnName="CheckedOn" type="xs:string" minOccurs="0" />
+              <xs:element name="DiluentPreparation" msprop:Generator_ColumnVarNameInTable="columnDiluentPreparation" msprop:Generator_ColumnPropNameInRow="DiluentPreparation" msprop:Generator_ColumnPropNameInTable="DiluentPreparationColumn" msprop:Generator_UserColumnName="DiluentPreparation" type="xs:string" minOccurs="0" />
+              <xs:element name="Uom" msprop:Generator_ColumnVarNameInTable="columnUom" msprop:Generator_ColumnPropNameInRow="Uom" msprop:Generator_ColumnPropNameInTable="UomColumn" msprop:Generator_UserColumnName="Uom" type="xs:string" minOccurs="0" />
+              <xs:element name="FinalVolume" msprop:Generator_ColumnVarNameInTable="columnFinalVolume" msprop:Generator_ColumnPropNameInRow="FinalVolume" msprop:Generator_ColumnPropNameInTable="FinalVolumeColumn" msprop:Generator_UserColumnName="FinalVolume" type="xs:string" minOccurs="0" />
+              <xs:element name="OutputOtherInfo" msprop:Generator_ColumnVarNameInTable="columnOutputOtherInfo" msprop:Generator_ColumnPropNameInRow="OutputOtherInfo" msprop:Generator_ColumnPropNameInTable="OutputOtherInfoColumn" msprop:Generator_UserColumnName="OutputOtherInfo" type="xs:string" minOccurs="0" />
+              <xs:element name="UseBefore" msprop:Generator_ColumnVarNameInTable="columnUseBefore" msprop:Generator_ColumnPropNameInRow="UseBefore" msprop:Generator_ColumnPropNameInTable="UseBeforeColumn" msprop:Generator_UserColumnName="UseBefore" type="xs:string" minOccurs="0" />
+              <xs:element name="SpecNo" msprop:Generator_ColumnVarNameInTable="columnSpecNo" msprop:Generator_ColumnPropNameInRow="SpecNo" msprop:Generator_ColumnPropNameInTable="SpecNoColumn" msprop:Generator_UserColumnName="SpecNo" type="xs:string" minOccurs="0" />
+              <xs:element name="PreparationOn" msprop:Generator_ColumnVarNameInTable="columnPreparationOn" msprop:Generator_ColumnPropNameInRow="PreparationOn" msprop:Generator_ColumnPropNameInTable="PreparationOnColumn" msprop:Generator_UserColumnName="PreparationOn" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName" type="xs:string" minOccurs="0" />
+              <xs:element name="TestName" msprop:Generator_ColumnVarNameInTable="columnTestName" msprop:Generator_ColumnPropNameInRow="TestName" msprop:Generator_ColumnPropNameInTable="TestNameColumn" msprop:Generator_UserColumnName="TestName" type="xs:string" minOccurs="0" />
+              <xs:element name="CalibrationReference" msprop:Generator_ColumnVarNameInTable="columnCalibrationReference" msprop:Generator_ColumnPropNameInRow="CalibrationReference" msprop:Generator_ColumnPropNameInTable="CalibrationReferenceColumn" msprop:Generator_UserColumnName="CalibrationReference" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblMPhasePrepSolvents" msprop:Generator_TableClassName="tblMPhasePrepSolventsDataTable" msprop:Generator_TableVarName="tabletblMPhasePrepSolvents" msprop:Generator_TablePropName="tblMPhasePrepSolvents" msprop:Generator_RowDeletingName="tblMPhasePrepSolventsRowDeleting" msprop:Generator_RowChangingName="tblMPhasePrepSolventsRowChanging" msprop:Generator_RowEvHandlerName="tblMPhasePrepSolventsRowChangeEventHandler" msprop:Generator_RowDeletedName="tblMPhasePrepSolventsRowDeleted" msprop:Generator_UserTableName="tblMPhasePrepSolvents" msprop:Generator_RowChangedName="tblMPhasePrepSolventsRowChanged" msprop:Generator_RowEvArgName="tblMPhasePrepSolventsRowChangeEvent" msprop:Generator_RowClassName="tblMPhasePrepSolventsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MatName" msprop:Generator_ColumnVarNameInTable="columnMatName" msprop:Generator_ColumnPropNameInRow="MatName" msprop:Generator_ColumnPropNameInTable="MatNameColumn" msprop:Generator_UserColumnName="MatName" type="xs:string" minOccurs="0" />
+              <xs:element name="Make" msprop:Generator_ColumnVarNameInTable="columnMake" msprop:Generator_ColumnPropNameInRow="Make" msprop:Generator_ColumnPropNameInTable="MakeColumn" msprop:Generator_UserColumnName="Make" type="xs:string" minOccurs="0" />
+              <xs:element name="BatchNo" msprop:Generator_ColumnVarNameInTable="columnBatchNo" msprop:Generator_ColumnPropNameInRow="BatchNo" msprop:Generator_ColumnPropNameInTable="BatchNoColumn" msprop:Generator_UserColumnName="BatchNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ExpDate" msprop:Generator_ColumnVarNameInTable="columnExpDate" msprop:Generator_ColumnPropNameInRow="ExpDate" msprop:Generator_ColumnPropNameInTable="ExpDateColumn" msprop:Generator_UserColumnName="ExpDate" type="xs:string" minOccurs="0" />
+              <xs:element name="QuantityPreparation" msprop:Generator_ColumnVarNameInTable="columnQuantityPreparation" msprop:Generator_ColumnPropNameInRow="QuantityPreparation" msprop:Generator_ColumnPropNameInTable="QuantityPreparationColumn" msprop:Generator_UserColumnName="QuantityPreparation" type="xs:string" minOccurs="0" />
+              <xs:element name="Uom" msprop:Generator_ColumnVarNameInTable="columnUom" msprop:Generator_ColumnPropNameInRow="Uom" msprop:Generator_ColumnPropNameInTable="UomColumn" msprop:Generator_UserColumnName="Uom" type="xs:string" minOccurs="0" />
+              <xs:element name="EquipmentUserCodes" msprop:Generator_ColumnVarNameInTable="columnEquipmentUserCodes" msprop:Generator_ColumnPropNameInRow="EquipmentUserCodes" msprop:Generator_ColumnPropNameInTable="EquipmentUserCodesColumn" msprop:Generator_UserColumnName="EquipmentUserCodes" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblMPhasePreparations" msprop:Generator_TableClassName="tblMPhasePreparationsDataTable" msprop:Generator_TableVarName="tabletblMPhasePreparations" msprop:Generator_RowChangedName="tblMPhasePreparationsRowChanged" msprop:Generator_TablePropName="tblMPhasePreparations" msprop:Generator_RowDeletingName="tblMPhasePreparationsRowDeleting" msprop:Generator_RowChangingName="tblMPhasePreparationsRowChanging" msprop:Generator_RowEvHandlerName="tblMPhasePreparationsRowChangeEventHandler" msprop:Generator_RowDeletedName="tblMPhasePreparationsRowDeleted" msprop:Generator_RowClassName="tblMPhasePreparationsRow" msprop:Generator_UserTableName="tblMPhasePreparations" msprop:Generator_RowEvArgName="tblMPhasePreparationsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PreparationType" msprop:Generator_ColumnVarNameInTable="columnPreparationType" msprop:Generator_ColumnPropNameInRow="PreparationType" msprop:Generator_ColumnPropNameInTable="PreparationTypeColumn" msprop:Generator_UserColumnName="PreparationType" type="xs:string" minOccurs="0" />
+              <xs:element name="Preparation" msprop:Generator_ColumnVarNameInTable="columnPreparation" msprop:Generator_ColumnPropNameInRow="Preparation" msprop:Generator_ColumnPropNameInTable="PreparationColumn" msprop:Generator_UserColumnName="Preparation" type="xs:string" minOccurs="0" />
+              <xs:element name="PhMeterCodes" msprop:Generator_ColumnVarNameInTable="columnPhMeterCodes" msprop:Generator_ColumnPropNameInRow="PhMeterCodes" msprop:Generator_ColumnPropNameInTable="PhMeterCodesColumn" msprop:Generator_UserColumnName="PhMeterCodes" type="xs:string" minOccurs="0" />
+              <xs:element name="SolPH" msprop:Generator_ColumnVarNameInTable="columnSolPH" msprop:Generator_ColumnPropNameInRow="SolPH" msprop:Generator_ColumnPropNameInTable="SolPHColumn" msprop:Generator_UserColumnName="SolPH" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OOSPROC_LIMS_NOTIF_V1" targetNamespace="http://tempuri.org/OOSProcNotification_V1.xsd" xmlns:mstns="http://tempuri.org/OOSProcNotification_V1.xsd" xmlns="http://tempuri.org/OOSProcNotification_V1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OOSPROC_LIMS_NOTIF_V1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="OOSPROC_LIMS_NOTIF_V1" msprop:Generator_UserDSName="OOSPROC_LIMS_NOTIF_V1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblNotification" msprop:Generator_TableClassName="tblNotificationDataTable" msprop:Generator_RowEvArgName="tblNotificationRowChangeEvent" msprop:Generator_TableVarName="tabletblNotification" msprop:Generator_TablePropName="tblNotification" msprop:Generator_RowDeletingName="tblNotificationRowDeleting" msprop:Generator_RowChangingName="tblNotificationRowChanging" msprop:Generator_RowEvHandlerName="tblNotificationRowChangeEventHandler" msprop:Generator_RowDeletedName="tblNotificationRowDeleted" msprop:Generator_RowChangedName="tblNotificationRowChanged" msprop:Generator_UserTableName="tblNotification" msprop:Generator_RowClassName="tblNotificationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PLANTNAME" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnPLANTNAME" msprop:Generator_ColumnPropNameInRow="PLANTNAME" msprop:Generator_ColumnPropNameInTable="PLANTNAMEColumn" msprop:Generator_UserColumnName="PLANTNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PROD_MAT_NAME" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnPROD_MAT_NAME" msprop:Generator_ColumnPropNameInRow="PROD_MAT_NAME" msprop:Generator_ColumnPropNameInTable="PROD_MAT_NAMEColumn" msprop:Generator_UserColumnName="PROD_MAT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="STAGE" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnSTAGE" msprop:Generator_ColumnPropNameInRow="STAGE" msprop:Generator_ColumnPropNameInTable="STAGEColumn" msprop:Generator_UserColumnName="STAGE" type="xs:string" minOccurs="0" />
+              <xs:element name="DESC_NOTIFICATION" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnDESC_NOTIFICATION" msprop:Generator_ColumnPropNameInRow="DESC_NOTIFICATION" msprop:Generator_ColumnPropNameInTable="DESC_NOTIFICATIONColumn" msprop:Generator_UserColumnName="DESC_NOTIFICATION" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER_NAME" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnCUSTOMER_NAME" msprop:Generator_ColumnPropNameInRow="CUSTOMER_NAME" msprop:Generator_ColumnPropNameInTable="CUSTOMER_NAMEColumn" msprop:Generator_UserColumnName="CUSTOMER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="NOTIFIED_BY" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnNOTIFIED_BY" msprop:Generator_ColumnPropNameInRow="NOTIFIED_BY" msprop:Generator_ColumnPropNameInTable="NOTIFIED_BYColumn" msprop:Generator_UserColumnName="NOTIFIED_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="NOTIFIED_ON" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnNOTIFIED_ON" msprop:Generator_ColumnPropNameInRow="NOTIFIED_ON" msprop:Generator_ColumnPropNameInTable="NOTIFIED_ONColumn" msprop:Generator_UserColumnName="NOTIFIED_ON" type="xs:string" minOccurs="0" />
+              <xs:element name="ROLE_NAME" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnROLE_NAME" msprop:Generator_ColumnPropNameInRow="ROLE_NAME" msprop:Generator_ColumnPropNameInTable="ROLE_NAMEColumn" msprop:Generator_UserColumnName="ROLE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="NOTIFICATION_TYPE" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnNOTIFICATION_TYPE" msprop:Generator_ColumnPropNameInRow="NOTIFICATION_TYPE" msprop:Generator_ColumnPropNameInTable="NOTIFICATION_TYPEColumn" msprop:Generator_UserColumnName="NOTIFICATION_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="REF_NUMBER" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnREF_NUMBER" msprop:Generator_ColumnPropNameInRow="REF_NUMBER" msprop:Generator_ColumnPropNameInTable="REF_NUMBERColumn" msprop:Generator_UserColumnName="REF_NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="INV_BATCHNUM" msprop:Generator_ColumnVarNameInTable="columnINV_BATCHNUM" msprop:Generator_ColumnPropNameInRow="INV_BATCHNUM" msprop:Generator_ColumnPropNameInTable="INV_BATCHNUMColumn" msprop:Generator_UserColumnName="INV_BATCHNUM" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

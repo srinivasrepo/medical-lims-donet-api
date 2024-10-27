@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16E5E648-9CD4-4119-A0C5-FC8E9DE18C25}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MedicalLIMSApi.Infrastructure</RootNamespace>
+    <AssemblyName>MedicalLIMSApi.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\MedicalLIMSApi.Web\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Practices.EnterpriseLibrary.Common.dll.3.1.0\lib\2.0\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Practices.EnterpriseLibrary.Data.dll.3.1.0\lib\2.0\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Practices.ObjectBuilder.dll.3.1.0\lib\2.0\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\DBHelper.cs" />
+    <Compile Include="Context\DBInfo.cs" />
+    <Compile Include="Context\TrainingContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportDAL\ReportDAL.cs" />
+    <Compile Include="Repository\AnalystQualification\AnalystQualificationRepository.cs" />
+    <Compile Include="Repository\ApprovalProcess\ApprovalProcessRepository.cs" />
+    <Compile Include="Repository\AuditTrail\AuditTrailRepository.cs" />
+    <Compile Include="Repository\CalibrationArds\CalibrationArdsRepository.cs" />
+    <Compile Include="Repository\Common\CommonRepository.cs" />
+    <Compile Include="Repository\DataReview\DataReviewRepository.cs" />
+    <Compile Include="Repository\Indicators\IndicatorsRepository.cs" />
+    <Compile Include="Repository\Invalidations\InvalidationsRepository.cs" />
+    <Compile Include="Repository\Login\LoginRepository.cs" />
+    <Compile Include="Repository\MobilePhase\MobilephaseRepository.cs" />
+    <Compile Include="Repository\OOS\OosRepository.cs" />
+    <Compile Include="Repository\QCCalibrations\QCCalibrationsRepository.cs" />
+    <Compile Include="Repository\QCInventory\QCInventoryRepository.cs" />
+    <Compile Include="Repository\Report\ReportRepository.cs" />
+    <Compile Include="Repository\RinsingSolutions\RinsingSolutionsRepository.cs" />
+    <Compile Include="Repository\RolePermissions\RolePermissionRepository.cs" />
+    <Compile Include="Repository\SampleAnalysis\SampleAnalysisRepository.cs" />
+    <Compile Include="Repository\SampleDestruction\SampleDestructionRepository.cs" />
+    <Compile Include="Repository\SamplePlan\SamplePlanRepository.cs" />
+    <Compile Include="Repository\SpecValidation\SpecValidationRepository.cs" />
+    <Compile Include="Repository\StockSolutions\StockSolutionsRepository.cs" />
+    <Compile Include="Repository\UtilUploads\UtilUploadsRepository.cs" />
+    <Compile Include="Repository\VolumetricSolution\VolumetricSolutionRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MedicalLIMSApi.Core\MedicalLIMSApi.Core.csproj">
+      <Project>{54e2fc5c-22b5-418f-8dd8-8ee1f7139ca9}</Project>
+      <Name>MedicalLIMSApi.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
